@@ -1,0 +1,46 @@
+---
+const cards = [
+	{
+	 title: "Quick Search",
+	 description: "Easily search your snippets by content, category, web address, application, and more."
+	 	
+	},
+	{
+	title: "iCloud Sync",  
+	description: "Instantly saves and syncs snippets across all your devices.",
+	},
+	{
+	title: "Complete History",  
+	description: "Retrieve any snippets from the first moment you started using the app",
+	}
+
+]
+---
+<section class="p-4 mt-28 flex flex-col items-center font-bai-jamjuree-400 overflow-clip">
+
+	<div class="text-center">
+		<h2 class="pb-4 text-2xl  text-Gray-700 font-extrabold w-[300px] sm:w-[668px]
+		">Keep track of your snippets</h2>
+	
+		<p class="text-Gray-500 w-[320px] mb-12 sm:w-[640px]">	Clipboard instantly stores any item you copy in the cloud, 
+		meaning you can access your snippets immediately on all your 
+		devices. Our Mac and iOS apps will help you organize everything.</p>
+	</div>
+
+	<div class="text-center sm:text-left sm:grid sm:grid-cols-2">
+		
+			<img class="p-4 mb-12 mx-auto sm:-translate-x-18 "  src="/images/image-computer.png" alt="computer"/>
+		
+
+		<div class="">
+			<div class="space-y-10 s text-balance sm:text-pretty sm:w-xs   lg:mt-24 lg:w-md">		
+				{cards.map((card) => (
+				<h3 class="text-xl font-extrabold text-Gray-700 mb-4 sm:text-md">{card.title}</h3> 
+				<p class="font-light text-Gray-500 sm:text-sm ">{card.description}</p>
+			)) }
+			</div>
+		</div>
+	</div>
+  
+	
+</section>

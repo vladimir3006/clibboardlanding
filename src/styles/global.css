@@ -1,0 +1,27 @@
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: "BaiJamjuree-400";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/Bai_Jamjuree/BaiJamjuree-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BaiJamjuree-600";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/Bai_Jamjuree/BaiJamjuree-Bold.ttf") format("truetype");
+}
+
+@theme {
+    --color-Green-500: hsl(171, 66%, 44%);
+    --color-Blue-100: hsl(233, 100%, 69%);
+    --color-Gray-700: hsl(210, 10%, 33%);
+    --color-Gray-500: hsl(201, 11%, 66%);
+
+    --font-bai-jamjuree-400: "BaiJamjuree-400";
+    --font-bai-jamjuree-600: "BaiJamjuree-600"; 
+
+}

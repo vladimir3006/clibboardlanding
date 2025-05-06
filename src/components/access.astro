@@ -1,0 +1,46 @@
+---
+const items =[
+	{
+		ico: "/images/icon-blacklist.svg",
+		title: "Create blacklists",
+		description: "Ensure sensitive information never makes its way to your clipboard by excluding certain sources."
+	},
+	{
+		ico: "/images/icon-text.svg",
+		title: "Plain text snippets",
+		description: "Remove unwanted formatting from copied text for a consistent look."
+	},
+	{
+		ico: "/images/icon-preview.svg",
+		title: "Sneak preview",
+		description: "Quick preview of all snippets on your Clipboard for easy access."
+	}
+]
+---
+<section class="text-center p-4 mt-28 flex flex-col items-center font-bai-jamjuree-400">
+  
+	<h2 class="pb-4 text-2xl text-balance text-Gray-700 font-extrabold w-[300px] sm:w-[668px]">Access Clipboard anywhere</h2>
+  
+	<p class="text-Gray-500 w-[320px] mb-12 sm:w-[650px]">Whether you’re on the go, or at your computer, you can access all your Clipboard 
+	snippets in a few simple clicks.</p>
+
+	<img class="w-[320px] mb-12 md:w-xl" src="/images/image-devices.png" alt=""/>
+  
+	<h2 class="pb-4 text-2xl text-balance text-Gray-700 font-extrabold w-[300px]">Supercharge your workflow</h2>
+  
+	<p class="text-Gray-500 w-[320px] mb-12 md:w-[650px] ">We’ve got the tools to boost your productivity.</p>
+  
+	
+		<div class="text-center space-y-12 sm:flex sm:gap-6  ">
+			{items.map((i) => (
+				<div class="">
+					<img class="mx-auto mb-6 h-6 " src={i.ico} alt={i.title}/>
+					<h3 class=" text-xl text-balance text-Gray-700 font-extrabold ">{i.title}</h3>
+					<p class="text-Gray-500 sm:w-[200px] lg:w-[320px] ">{i.description}</p>
+				</div>
+			)) }
+			
+		</div>
+	
+	
+</section>

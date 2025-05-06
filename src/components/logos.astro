@@ -1,0 +1,25 @@
+---
+const logos=[
+    {
+        img: "/images/logo-google.png"
+    },
+    {
+        img: "/images/logo-ibm.png"
+    },
+    {
+        img: "/images/logo-microsoft.png"
+    },
+    {
+        img: "/images/logo-hp.png"
+    },
+    {
+        img: "/images/logo-vector-graphics.png"
+    }
+]
+---
+<section class="mt-24 space-y-12 flex flex-col items-center sm:flex-row sm:justify-center sm:gap-10 sm:space-y-0 sm:mt-12">
+    {logos.map((l)=>(
+        <img class="w-26" src={l.img} alt=""/>
+    ))}
+    
+</section>

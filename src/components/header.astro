@@ -1,0 +1,23 @@
+---
+import BtnGreen from "../components/ui/btngreen.astro";
+import BtnBlue from "../components/ui/btnblue.astro";
+---
+
+<header class="text-center p-4 mt-20 flex flex-col items-center font-bai-jamjuree-400">
+	
+    <img class="mb-16 size-24 " 
+    src="/images/logo.svg" alt="logo" >
+
+    <h1 class="text-3xl mb-4 w-[310px] font-bold text-Gray-700 sm:w-[668px]
+    
+    ">A history of everything you copy</h1>
+
+	<p class="font-light w-[310px] text-Gray-500 mb-12 sm:w-[468px]">Clipboard allows you to track and organize everything you 
+	copy. Instantly access your clipboard on all your devices.</p>
+  
+	<div class="w-[310px] flex flex-col gap-4 sm:w-[400px] sm:flex sm:flex-row sm:gap-4 " >
+        <BtnGreen nombre="Donwload for iOS"/>
+        <BtnBlue nombre="Download for Mac"/>
+    </div>
+
+</header>
